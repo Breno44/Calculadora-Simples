@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section class="calculadora">
+        <input class="calculadora__resultado" id="input"></input>
+        <form class="calculadora__botoes">
+            <input type="button" class="calculadora__botoes-operacoes" value="+" onclick="insert('+')">
+            <input type="button" class="calculadora__botoes-operacoes" value="-" onclick="insert('-')">
+            <input type="button" class="calculadora__botoes-operacoes" value="x" onclick="insert('*')">
+            <input type="button" class="calculadora__botoes-operacoes" value="÷" onclick="insert('/')">
+        </form>
+        <section class="calculadora__numeros">
+            <input type="button" class="calculadora__botoes-numeros" value="9" onclick="insert(9)">
+            <input type="button" class="calculadora__botoes-numeros" value="8" onclick="insert(8)">
+            <input type="button" class="calculadora__botoes-numeros" value="7" onclick="insert(7)">
+            <input type="button" class="calculadora__botoes-numeros" value="6" onclick="insert(6)">
+            <input type="button" class="calculadora__botoes-numeros" value="5" onclick="insert(5)">
+            <input type="button" class="calculadora__botoes-numeros" value="4" onclick="insert(4)">
+            <input type="button" class="calculadora__botoes-numeros" value="3" onclick="insert(3)">
+            <input type="button" class="calculadora__botoes-numeros" value="2" onclick="insert(2)">
+            <input type="button" class="calculadora__botoes-numeros" value="1" onclick="insert(1)">
+            <input type="button" class="calculadora__botoes-numeros" value="0" onclick="insert(0)">
+            <input type="button" class="calculadora__botoes-numeros" value="." onclick="insert('.')">
+            <input type="button" class="calculadora__botoes-numeros" id="clear" value="C" onclick="backspace()">
+            <input type="button" class="calculadora__botao-resultado" id="result" value="=" onclick="result()">
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
